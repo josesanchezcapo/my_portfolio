@@ -1,0 +1,18 @@
+.main-nav {
+    background: #3B5998;
+
+
+}
+
+.nav-name {
+    margin-left: 5%;
+    font-size: 50px;
+    font-family: 'Coustard', serif;
+    color: white;
+}
+.nav-menu {
+    text-align: right;
+    font-family: 'Coustard', serif;
+    color: white;
+}
+
