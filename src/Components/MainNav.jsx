@@ -1,9 +1,9 @@
+// adding imports
 import React from "react";
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Navbar from 'react-bootstrap/Navbar';
+import NavLink from "react-bootstrap/NavLink";
+// adding stylesheet * shared
 import './stylesheet.css';
-import {NavLink} from "react-bootstrap";
 
 function MainNav () {
 
@@ -11,7 +11,7 @@ function MainNav () {
 
         <nav className="main-nav">
             <NavLink className="nav-name" href="#">Jose Sanchez-Capo </NavLink>
-            <section className="nav-aligment">
+            <section className="nav-alignment">
                 <Nav.Link className="navbar-brand" href="#">Home</Nav.Link>
                 <NavLink className="navbar-brand" href="./portfolio.html">My Porfolio</NavLink>
                 <NavLink className="navbar-brand" href="./contact.html">Contact Me</NavLink>
