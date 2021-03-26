@@ -1,7 +1,8 @@
 // adding imports
 import React from "react";
-import Nav from 'react-bootstrap/Nav';
-import NavLink from "react-bootstrap/NavLink";
+import {Nav , NavLink} from 'react-bootstrap';
+import  {LinkContainer} from 'react-router-bootstrap';
+
 // adding stylesheet * shared
 import './stylesheet.css';
 
@@ -9,15 +10,22 @@ function MainNav () {
 
     return (
 
-        <nav className="main-nav">
-            <NavLink className="nav-name" href="#">Jose Sanchez-Capo </NavLink>
+        <Nav className="main-nav">
+            <LinkContainer to="/" >
+            <NavLink className="nav-name">Jose Sanchez-Capo</NavLink>
+            </LinkContainer>
             <section className="nav-alignment">
-                <Nav.Link className="navbar-brand" href="#">Home</Nav.Link>
-                <NavLink className="navbar-brand" href="./portfolio.html">My Porfolio</NavLink>
-                <NavLink className="navbar-brand" href="./contact.html">Contact Me</NavLink>
-                <NavLink className="navbar-brand" href="./resume.html">My Resume</NavLink>
+                <LinkContainer to="/projects" >
+                    <NavLink>Projects</NavLink>
+                </LinkContainer>
+                <LinkContainer to="/resume">
+                    <NavLink>Resume</NavLink>
+                </LinkContainer>
+                <LinkContainer to="/contact_me" >
+                    <NavLink>Contact Me</NavLink>
+                </LinkContainer>
             </section>
-        </nav>
+        </Nav>
     );
 }
 
