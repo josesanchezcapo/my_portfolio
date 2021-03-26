@@ -12,16 +12,12 @@
     height: auto;
     color: white;
 }
-
-
 .nav-alignment {
     text-align: center;
-    margin-top: 5%;
-    margin-left: 40%;
+
 }
 
 .nav-alignment a {
-
     display: inline;
     margin-right: 1em;
     font-family: 'Coustard', serif;

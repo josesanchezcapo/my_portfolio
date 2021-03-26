@@ -8,26 +8,24 @@ import './stylesheet.css';
 
 function MainNav () {
 
-    return (
+    return [
 
         <Nav className="main-nav">
+            <a className="nav-name" href="#">Jose Sanchez-Capo </a>
 
-            <section className="nav-alignment">
+            <section className={"nav-alignment"}>
                 <LinkContainer to="/" >
                     <NavLink>Home</NavLink>
                 </LinkContainer>
                 <LinkContainer to="/projects" >
                     <NavLink>Projects</NavLink>
                 </LinkContainer>
-                <LinkContainer to="/resume">
-                    <NavLink>Resume</NavLink>
-                </LinkContainer>
                 <LinkContainer to="/contact_me" >
                     <NavLink>Contact Me</NavLink>
                 </LinkContainer>
             </section>
         </Nav>
-    );
+    ]
 }
 
 export default MainNav;
