@@ -11,10 +11,11 @@ function MainNav () {
     return (
 
         <Nav className="main-nav">
-            <LinkContainer to="/" >
-            <NavLink className="nav-name">Jose Sanchez-Capo</NavLink>
-            </LinkContainer>
+
             <section className="nav-alignment">
+                <LinkContainer to="/" >
+                    <NavLink>Home</NavLink>
+                </LinkContainer>
                 <LinkContainer to="/projects" >
                     <NavLink>Projects</NavLink>
                 </LinkContainer>
